@@ -25,3 +25,6 @@ PLUGIN.minRuntimeVersion = "0.3.0"
 -- Some things that need user to be attention!
 PLUGIN.notes = {
 }
+PLUGIN.legacyFilenames = {
+    ".fvmrc"
+}
