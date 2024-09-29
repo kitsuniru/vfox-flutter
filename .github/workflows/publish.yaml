@@ -70,7 +70,7 @@ jobs:
           tag: v${{ env.VERSION }}
           file_glob: true
       - name: Publish manifest
-        uses: svenstaro/upload-release-action@v4
+        uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: ./manifest.json
