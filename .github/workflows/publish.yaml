@@ -63,7 +63,7 @@ jobs:
           filename: "${{ env.REPO_NAME }}-${{ env.VERSION }}.zip"
           exclusions: "*.git* manifest.json"
       - name: Publish release
-        uses: svenstaro/upload-release-action@v4
+        uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: ./${{ env.REPO_NAME }}-${{ env.VERSION }}.zip
